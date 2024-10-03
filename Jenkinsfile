@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Checkout K8S manifest SCM'){
             steps {
-              git branch: 'main', url: ''
+              git branch: 'main', url: 'https://github.com/sunayana08-coder/hiringapp-docker.git'
             }
         } 
         stage('Update K8S manifest & push to Repo'){
